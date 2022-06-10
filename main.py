@@ -1,9 +1,15 @@
+"""Main starting point of app."""
 import typer
 from app import setup_app
 from config import config
 from notes import create_new_note, add_content_to_note, \
     list_all_notes, get_notes_content
+
+
+# Instantiate app.
 app = typer.Typer()
+
+
 @app.command()
 def create_note(name: str):
     try:
@@ -47,5 +53,6 @@ def show_content(name: str):
 
 
 if __name__ == "__main__":
+    # Setup app.
     setup_app(config=config)
     app()

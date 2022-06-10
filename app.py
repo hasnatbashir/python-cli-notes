@@ -1,5 +1,6 @@
+"""Contains app startup logic."""
 import os
-import typer
+
 def setup_app(config):
     
     if not os.path.isdir(config['notes_dir']):

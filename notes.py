@@ -1,5 +1,9 @@
+"""Contains core functionality of notes."""
+
 from config import config
 import os
+
+
 notes_dir = config["notes_dir"]
 
 
