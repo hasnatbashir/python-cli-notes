@@ -27,4 +27,4 @@ To execute tests.
 pytest tests/
 ```
 
-**Note:** Tests are failing due to to no mocking for file system calls.
+**Note:** Tests are failing since there is no mocking for file system calls can be contributed for future work.
